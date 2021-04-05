@@ -22,4 +22,5 @@ d.addEventListener("DOMContentLoaded", function (e) {
 });
 d.addEventListener("keydown", function (e) {
   (0, _eventosTeclado.shortCuts)(e);
+  (0, _eventosTeclado.moveBall)(e, ".ball", ".stage");
 });

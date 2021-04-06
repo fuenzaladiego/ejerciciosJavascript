@@ -1,6 +1,7 @@
 import hamburgerMenu from "./script.js";
 import {digitalClock, alarm} from "./reloj.js"
 import {moveBall,shortCuts} from "./eventosTeclado.js"
+import {countdown} from "./countDown.js"
 
 const d = document;
 
@@ -14,6 +15,7 @@ d.addEventListener("DOMContentLoaded",e => {
     hamburgerMenu(".panel-btn",".panel", ".menu a");
     digitalClock("#reloj","#activar-reloj","#desactivar-reloj");
     alarm("./alarma.mp3","#activar-alarma","#desactivar-alarma");
+    countdown("countdown","Nov 30, 2021 11:30:00","Feliz cumple Diego");
 })
   
 d.addEventListener("keydown", e =>{

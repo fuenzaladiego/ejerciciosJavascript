@@ -2,7 +2,8 @@ import hamburgerMenu from "./script.js";
 import {digitalClock, alarm} from "./reloj.js"
 import {moveBall,shortCuts} from "./eventosTeclado.js"
 import {countdown} from "./countDown.js"
-
+import scrollTopButton from "./botonScroll.js"
+import { darkTheme } from "./darkTheme.js";
 const d = document;
 
 /*
@@ -16,6 +17,9 @@ d.addEventListener("DOMContentLoaded",e => {
     digitalClock("#reloj","#activar-reloj","#desactivar-reloj");
     alarm("./alarma.mp3","#activar-alarma","#desactivar-alarma");
     countdown("countdown","Nov 30, 2021 11:30:00","Feliz cumple Diego");
+    scrollTopButton(".scroll-top-btn");
+    darkTheme(".dark-theme-btn","dark-mode");
+
 })
   
 d.addEventListener("keydown", e =>{
